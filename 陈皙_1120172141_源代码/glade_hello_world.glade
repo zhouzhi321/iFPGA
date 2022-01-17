@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkTextBuffer"/>
+  <object class="GtkWindow" id="window_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">EDA GUI</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="btn_hello">
+            <property name="label" translatable="yes">execute</property>
+            <property name="width_request">100</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_hello_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">304</property>
+            <property name="y">189</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="text_v">
+            <property name="width_request">242</property>
+            <property name="height_request">31</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">35</property>
+            <property name="y">193</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="filebutton">
+            <property name="width_request">187</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="on_filebutton_file_set" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">31</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="filebutton2">
+            <property name="width_request">184</property>
+            <property name="height_request">54</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="on_filebutton2_file_set" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_simple">
+            <property name="label" translatable="yes">synth and pnr</property>
+            <property name="width_request">107</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_simple_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">302</property>
+            <property name="y">28</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="struct_image">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">35</property>
+            <property name="y">241</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_simtest">
+            <property name="label" translatable="yes">sim and more</property>
+            <property name="width_request">105</property>
+            <property name="height_request">51</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_simtest_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">303</property>
+            <property name="y">109</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_1">
+            <property name="width_request">100</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Choose verilog program:</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_2">
+            <property name="width_request">124</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Choose testbench:</property>
+          </object>
+          <packing>
+            <property name="x">34</property>
+            <property name="y">84</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">167</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">(Auxiliary) Input cmdline:</property>
+          </object>
+          <packing>
+            <property name="x">32</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
